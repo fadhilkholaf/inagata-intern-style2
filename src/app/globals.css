@@ -1,33 +1,37 @@
+/* Tailwinds */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Fonts */
+
+@font-face {
+  font-family: 'SF-Pro-Rounded-Regular';
+  src: url('/fonts/SF-Pro-Rounded-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.sf-pro-rounded {
+  font-family: 'SF-Pro-Rounded-Regular', sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar-track {
+  background: #ae39ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ae39ff #ffffff;
 }

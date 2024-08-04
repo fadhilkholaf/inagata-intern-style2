@@ -19,7 +19,7 @@ export default function HeroGaleri() {
         className="h-5/6 w-3/5"
       />
       <Image
-        src="/images/hero//hero-foreground.svg"
+        src="/images/hero/hero-foreground.svg"
         alt="hero"
         width={500}
         height={500}
@@ -33,7 +33,7 @@ export default function HeroGaleri() {
         className="absolute -bottom-4 left-0 -z-[11]"
       />
       <Image
-        src="/images/hero//hero-vector2.svg"
+        src="/images/hero/hero-vector2.svg"
         alt="hero"
         width={500}
         height={500}

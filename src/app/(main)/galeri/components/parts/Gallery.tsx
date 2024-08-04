@@ -90,7 +90,7 @@ export default function Gallery() {
         <P className="text-2xl font-medium text-[#4FACF6]">Galeri</P>
         <H2 className="text-dark-blue">Dokumentasi Sekolah</H2>
       </div>
-      <div className="grid grid-cols-3 gap-x-16">
+      <div className="grid grid-cols-3 gap-16">
         {documentations &&
           documentations.map((documentation, index) => (
             <div
@@ -98,9 +98,9 @@ export default function Gallery() {
               className="flex flex-col gap-y-1"
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay={`${windowWidth < 1024 ? 0 : generateDelay(index)}`}
+              data-aos-delay={`${windowWidth < 768 ? 0 : generateDelay(index)}`}
             >
-              <div className="group h-80 overflow-hidden rounded-3xl">
+              <div className="group h-80 w-full overflow-hidden rounded-3xl">
                 <Image
                   src={`/images/gallery/${index + 1}.png`}
                   alt="dokumentasi"
@@ -111,7 +111,6 @@ export default function Gallery() {
               </div>
               <P className="mt-5 text-2xl font-semibold text-dark-blue">
                 {documentation.title}
-                {windowWidth}
               </P>
               <P className="text-base text-[#2E334E]">
                 {documentation.description}

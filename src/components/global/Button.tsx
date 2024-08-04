@@ -3,13 +3,16 @@ import Link from 'next/link';
 
 export function Button({
   children,
-  className
+  className,
+  type
 }: {
   children: React.ReactNode;
   className?: string;
+  type?: 'submit' | 'reset' | 'button' | undefined;
 }) {
   return (
     <button
+      type={type}
       className={cn(
         'h-fit w-fit rounded-full bg-accent px-6 py-3 text-white',
         className

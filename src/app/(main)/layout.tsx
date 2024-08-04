@@ -1,7 +1,8 @@
+import { Suspense } from 'react';
+
 import Footer from '@/components/Footer';
 import { H2 } from '@/components/global/Text';
 import Navbar from '@/components/Navbar';
-import { Suspense } from 'react';
 
 export default function RootLayout({
   children

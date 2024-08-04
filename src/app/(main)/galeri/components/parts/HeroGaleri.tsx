@@ -2,15 +2,17 @@ import Image from 'next/image';
 
 import { P, H1 } from '@/components/global/Text';
 
-export default function HeroTentang() {
+export default function HeroGaleri() {
   return (
     <section className="flex h-screen w-screen items-center justify-between bg-cover bg-bottom bg-no-repeat px-20">
       <div className="z-10 flex w-1/3 flex-col gap-y-4">
-        <H1 className="text-white">Tentang Kami</H1>
-        <P className="text-white">Informasi tentang kami</P>
+        <H1 className="text-white">Galeri</H1>
+        <P className="text-white">
+          Beberapa dokumentasi area sekolah dan kegiatan sekolah
+        </P>
       </div>
       <Image
-        src="/images/hero/hero-image2.svg"
+        src="/images/hero/hero-image3.svg"
         alt="hero"
         width={500}
         height={500}

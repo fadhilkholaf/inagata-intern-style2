@@ -15,7 +15,6 @@ export default function Footer() {
             className="h-16 w-fit"
             data-aos="fade-left"
             data-aos-duration="500"
-            data-aos-anchor-placement="top-bottom"
           />
           <P className="text-justify text-[#2E334E]">
             Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami, untuk
@@ -28,7 +27,6 @@ export default function Footer() {
             data-aos="fade-left"
             data-aos-duration="500"
             data-aos-delay="100"
-            data-aos-anchor-placement="top-bottom"
           >
             <P className="sf-pro-rounded text-2xl font-semibold text-dark-blue">
               Informasi
@@ -41,7 +39,6 @@ export default function Footer() {
             data-aos="fade-left"
             data-aos-duration="500"
             data-aos-delay="200"
-            data-aos-anchor-placement="top-bottom"
           >
             <P className="sf-pro-rounded text-2xl font-semibold text-dark-blue">
               Tentang
@@ -54,7 +51,6 @@ export default function Footer() {
             data-aos="fade-left"
             data-aos-duration="500"
             data-aos-delay="300"
-            data-aos-anchor-placement="top-bottom"
           >
             <P className="sf-pro-rounded text-nowrap text-2xl font-semibold text-dark-blue">
               Ikuti Kami

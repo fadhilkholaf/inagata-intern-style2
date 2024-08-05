@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function VideoProfile() {
   return (
-    <div className="mt-32 flex w-screen flex-col gap-y-4 px-20 py-5 text-center">
+    <div className="mt-32 flex w-screen flex-col gap-y-4 px-4 py-5 text-center lg:px-20">
       <P className="text-2xl font-medium text-[#4FACF6]">Cuplikan Sekolah</P>
       <H2 className="text-dark-blue">Video Profil</H2>
       <div

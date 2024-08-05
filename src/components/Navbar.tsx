@@ -51,7 +51,9 @@ export default function Navbar() {
       >
         {menus &&
           menus.map((menu, index) => (
-            <NavbarMenu key={index} title={menu.title} href={menu.href} />
+            <span key={index} onClick={() => setActive(false)}>
+              <NavbarMenu title={menu.title} href={menu.href} />
+            </span>
           ))}
         <button className="rounded-full border-2 border-white px-6 py-1 text-white md:hidden">
           PPDB

@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const AOSProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ anchorPlacement: 'top-bottom' });
   }, []);
 
   return <>{children}</>;

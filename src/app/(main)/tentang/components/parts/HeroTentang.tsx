@@ -4,8 +4,8 @@ import { P, H1 } from '@/components/global/Text';
 
 export default function HeroTentang() {
   return (
-    <section className="flex h-screen w-screen items-center justify-between bg-cover bg-bottom bg-no-repeat px-20">
-      <div className="z-10 flex w-1/3 flex-col gap-y-4">
+    <section className="mt-20 flex h-screen w-screen flex-col items-center justify-around bg-cover bg-bottom bg-no-repeat px-4 lg:mt-0 lg:flex-row lg:justify-between lg:px-20">
+      <div className="z-10 flex w-full flex-col gap-y-4 lg:w-1/3">
         <H1 className="text-white">Tentang Kami</H1>
         <P className="text-white">Informasi tentang kami</P>
       </div>
@@ -14,7 +14,7 @@ export default function HeroTentang() {
         alt="hero"
         width={500}
         height={500}
-        className="h-5/6 w-3/5"
+        className="right-0 z-0 h-1/2 w-auto lg:absolute lg:mr-20 lg:h-5/6"
       />
       <Image
         src="/images/hero/hero-foreground.svg"

@@ -16,7 +16,7 @@ export default function NavbarMenu({
   return (
     <Link
       href={href}
-      className={cn('text-white hover:font-semibold', {
+      className={cn('text-4xl text-white hover:font-semibold md:text-base', {
         'font-semibold': path === href.slice(1)
       })}
     >

@@ -11,7 +11,7 @@ export function H1({
 }) {
   return (
     <h1
-      className={cn('sf-pro-rounded text-7xl font-bold', className)}
+      className={cn('sf-pro-rounded text-4xl font-bold lg:text-7xl', className)}
       data-aos="fade-up"
     >
       {children}
@@ -28,7 +28,7 @@ export function H2({
 }) {
   return (
     <h2
-      className={cn('sf-pro-rounded text-6xl font-bold', className)}
+      className={cn('sf-pro-rounded text-3xl font-bold lg:text-6xl', className)}
       data-aos="fade-up"
     >
       {children}
@@ -43,5 +43,5 @@ export function P({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <p className={cn('text-xl', className)}>{children}</p>;
+  return <p className={cn('lg:text-xl', className)}>{children}</p>;
 }

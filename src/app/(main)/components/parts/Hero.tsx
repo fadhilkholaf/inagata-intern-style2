@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="flex h-screen w-screen items-center bg-cover bg-bottom bg-no-repeat px-20">
-      <div className="z-10 flex w-1/2 flex-col gap-y-4">
+    <section className="flex h-screen w-screen flex-col items-center justify-end bg-cover bg-bottom bg-no-repeat px-4 lg:flex-row lg:justify-normal lg:px-20">
+      <div className="z-10 flex w-full flex-col gap-y-4 lg:w-1/2">
         <H1 className="text-white">
           Tuntut Ilmu Untuk Masa Depan Yang Lebih Baik
         </H1>
@@ -20,7 +20,7 @@ export default function Hero() {
         alt="hero"
         width={500}
         height={500}
-        className="absolute right-0 z-0 mr-20 h-5/6 w-auto"
+        className="right-0 z-0 h-1/2 w-auto lg:absolute lg:mr-20 lg:h-5/6"
       />
       <Image
         src="/images/hero/hero-foreground.svg"

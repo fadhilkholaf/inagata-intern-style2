@@ -4,9 +4,9 @@ import { P } from './global/Text';
 
 export default function Footer() {
   return (
-    <footer className="flex w-screen flex-col">
-      <div className="flex justify-between gap-20 px-20 py-16">
-        <div className="flex w-1/2 flex-col gap-y-6">
+    <footer className="flex w-screen flex-col overflow-hidden">
+      <div className="flex flex-col justify-between gap-6 px-4 py-8 lg:flex-row lg:gap-20 lg:px-20 lg:py-16">
+        <div className="flex w-full flex-col gap-y-6 lg:w-1/2">
           <Image
             src="/images/icons/inagata-dark-blue.svg"
             alt="icon"
@@ -22,9 +22,9 @@ export default function Footer() {
             kehidupan yang lebih bermanfaat
           </P>
         </div>
-        <div className="flex w-1/2 justify-between gap-x-20">
+        <div className="flex flex-col justify-between gap-6 sm:flex-row lg:w-1/2 lg:gap-20">
           <div
-            className="flex flex-col gap-y-5"
+            className="flex flex-col gap-y-2 lg:gap-y-5"
             data-aos="fade-left"
             data-aos-duration="500"
             data-aos-delay="100"
@@ -37,7 +37,7 @@ export default function Footer() {
             <P className="text-[#404040]">Galeri</P>
           </div>
           <div
-            className="flex flex-col gap-y-5"
+            className="flex flex-col gap-y-2 lg:gap-y-5"
             data-aos="fade-left"
             data-aos-duration="500"
             data-aos-delay="200"
@@ -50,7 +50,7 @@ export default function Footer() {
             <P className="text-[#404040]">Tentang Kami</P>
           </div>
           <div
-            className="flex flex-col gap-y-5"
+            className="flex flex-col gap-y-2 lg:gap-y-5"
             data-aos="fade-left"
             data-aos-duration="500"
             data-aos-delay="300"

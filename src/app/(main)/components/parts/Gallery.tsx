@@ -21,17 +21,20 @@ const documentations: { title: string; description: string }[] = [
 
 export default function Gallery() {
   return (
-    <section className="mt-32 flex w-screen flex-col gap-y-10 bg-[#E9EFFF] px-20 py-28">
-      <div className="flex items-center justify-between">
-        <div className="flex flex-col gap-y-1">
+    <section className="mt-32 flex w-screen flex-col gap-y-10 bg-[#E9EFFF] px-4 py-28 lg:px-20">
+      <div className="flex flex-col items-center justify-between gap-y-6 lg:flex-row">
+        <div className="flex w-full flex-col gap-y-1">
           <P className="text-2xl font-medium text-accent">Galeri</P>
           <H2 className="text-dark-blue">Dokumentasi Sekolah</H2>
         </div>
-        <ButtonLink href="/galeri" className="rounded bg-[#F2B828]">
+        <ButtonLink
+          href="/galeri"
+          className="w-full rounded bg-[#F2B828] text-center lg:w-fit"
+        >
           Lihat Semua
         </ButtonLink>
       </div>
-      <div className="flex justify-between gap-x-16">
+      <div className="flex flex-col justify-between gap-16 lg:flex-row">
         {documentations &&
           documentations.map((documentation, index) => (
             <div

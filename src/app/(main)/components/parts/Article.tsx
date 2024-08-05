@@ -23,14 +23,14 @@ const articles: { title: string; description: string }[] = [
 
 export default function Article() {
   return (
-    <section className="mt-32 flex w-screen flex-col gap-y-10 px-20 py-12">
+    <section className="mt-32 flex w-screen flex-col gap-y-10 px-4 py-12 lg:px-20">
       <div className="flex flex-col gap-y-1 text-center">
         <P className="text-2xl font-medium text-[#4FACF6]">
           Artikel seputar pendidikan
         </P>
         <H2 className="text-dark-blue">Artikel Terbaru</H2>
       </div>
-      <div className="flex justify-between gap-x-16">
+      <div className="flex flex-col justify-between gap-16 lg:flex-row">
         {articles &&
           articles.map((article, index) => (
             <div
@@ -41,7 +41,7 @@ export default function Article() {
               data-aos-delay={`${index * 100}`}
             >
               <div className="relative flex justify-center pb-5">
-                <div className="group h-80 overflow-hidden rounded-3xl">
+                <div className="group h-80 w-full overflow-hidden rounded-3xl">
                   <Image
                     src={`/images/article/1.png`}
                     alt="artikel"

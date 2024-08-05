@@ -11,11 +11,11 @@ export default function RootLayout({
       <Navbar />
       {children}
       <div
-        className="relative mt-32 h-[394px]"
+        className="mt-32 lg:relative lg:h-[394px]"
         style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}
       >
-        <div className="relative -top-[100vh] h-[calc(100vh+400px)]">
-          <div className="sticky top-[calc(100vh-400px)] h-fit">
+        <div className="lg:relative lg:-top-[100vh] lg:h-[calc(100vh+400px)]">
+          <div className="h-fit lg:sticky lg:top-[calc(100vh-400px)]">
             <Footer />
           </div>
         </div>

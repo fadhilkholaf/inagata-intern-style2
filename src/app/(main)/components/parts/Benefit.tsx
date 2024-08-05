@@ -25,12 +25,12 @@ const benefits: { image: string; title: string; description: string }[] = [
 
 export default function Benefit({ tentang }: { tentang?: boolean }) {
   return (
-    <section className="mt-32 flex w-screen flex-col gap-y-20 px-20 py-12">
+    <section className="mt-32 flex w-screen flex-col gap-y-20 px-4 py-12 lg:px-20">
       <div className={cn('flex flex-col gap-y-1', { 'text-center': tentang })}>
         <P className="text-2xl font-medium text-accent">Kenapa Memilih Kami</P>
         <H2 className="text-dark-blue">Keunggulan Sekolah Kami</H2>
       </div>
-      <div className="flex justify-between gap-x-12">
+      <div className="flex flex-col justify-between gap-12 lg:flex-row">
         {benefits &&
           benefits.map((benefit, index) => (
             <div

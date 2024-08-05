@@ -5,15 +5,15 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section className="mt-32 flex w-screen items-center gap-x-32 px-20 py-32">
+    <section className="mt-32 flex w-screen flex-col-reverse items-center gap-32 px-4 py-32 lg:flex-row lg:px-20">
       <Image
         src="/images/about-image.svg"
         alt="about"
         width={500}
         height={500}
-        className="w-1/3"
+        className="h-1/2 lg:w-1/3"
       />
-      <div className="flex w-2/3 flex-col gap-y-6">
+      <div className="flex w-full flex-col gap-y-6 lg:w-2/3">
         <H2 className="text-dark-blue">Tentang Kami</H2>
         <P className="text-dark-blue">
           Sekolah Kami merupakan sekolah informal yang dikelola untuk membantu

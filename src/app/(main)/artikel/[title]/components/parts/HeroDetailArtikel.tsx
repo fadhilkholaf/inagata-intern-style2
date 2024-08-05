@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function HeroDetailArtikel() {
   return (
-    <section className="flex h-[115vh] w-screen items-end justify-between bg-cover bg-bottom bg-no-repeat px-20">
+    <section className="flex h-[115vh] w-screen items-end justify-between bg-cover bg-bottom bg-no-repeat px-4 lg:px-20">
       <Image
         src="/images/article/1.png"
         alt="hero"

@@ -14,7 +14,7 @@ export default function HeroTentang() {
         alt="hero"
         width={500}
         height={500}
-        className="right-0 z-0 h-1/2 w-auto lg:absolute lg:mr-20 lg:h-5/6"
+        className="right-0 z-0 h-1/2 w-3/5 lg:absolute lg:mr-20 lg:h-5/6"
       />
       <Image
         src="/images/hero/hero-foreground.svg"

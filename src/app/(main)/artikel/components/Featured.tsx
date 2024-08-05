@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function Featured() {
   return (
-    <article className="flex w-full gap-x-4">
+    <article className="flex w-full flex-col gap-4 lg:flex-row">
       <div
         className="group w-full overflow-hidden rounded-3xl"
         data-aos="fade-up"

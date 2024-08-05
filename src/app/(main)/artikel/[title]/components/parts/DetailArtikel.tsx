@@ -3,7 +3,7 @@ import { H2, P } from '@/components/global/Text';
 
 export default function DetailArtikel({ title }: { title: string }) {
   return (
-    <section className="mt-10 flex min-h-screen w-screen flex-col gap-y-4 px-20">
+    <section className="mt-10 flex min-h-screen w-screen flex-col gap-y-4 px-4 lg:px-20">
       <Badge className="text-white">12 Desember 2021</Badge>
       <H2 className="text-dark-blue">{title}</H2>
       <div className="flex flex-col gap-y-6 text-[#3A3B41]">

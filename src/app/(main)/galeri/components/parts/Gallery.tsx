@@ -72,7 +72,8 @@ export default function Gallery() {
   }, []);
 
   const generateDelay = (index: number) => {
-    switch (index % 3) {
+    let column = windowWidth < 640 ? 1 : windowWidth < 1280 ? 2 : 3;
+    switch (index % column) {
       case 0:
         return 0;
       case 1:
@@ -85,12 +86,12 @@ export default function Gallery() {
   };
 
   return (
-    <section className="mt-32 flex w-screen flex-col gap-y-10 px-20 py-28">
+    <section className="mt-32 flex w-screen flex-col gap-y-10 px-4 py-28 lg:px-20">
       <div className="flex flex-col gap-y-1 text-center">
         <P className="text-2xl font-medium text-[#4FACF6]">Galeri</P>
         <H2 className="text-dark-blue">Dokumentasi Sekolah</H2>
       </div>
-      <div className="grid grid-cols-3 gap-16">
+      <div className="grid grid-cols-1 gap-16 sm:grid-cols-2 xl:grid-cols-3">
         {documentations &&
           documentations.map((documentation, index) => (
             <div
@@ -98,7 +99,7 @@ export default function Gallery() {
               className="flex flex-col gap-y-1"
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay={`${windowWidth < 768 ? 0 : generateDelay(index)}`}
+              data-aos-delay={`${generateDelay(index)}`}
             >
               <div className="group h-80 w-full overflow-hidden rounded-3xl">
                 <Image

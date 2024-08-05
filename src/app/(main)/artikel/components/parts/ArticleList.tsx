@@ -63,7 +63,8 @@ export default function ArticleList() {
   }, []);
 
   const generateDelay = (index: number) => {
-    switch (index % 3) {
+    let column = windowWidth < 640 ? 1 : windowWidth < 1280 ? 2 : 3;
+    switch (index % column) {
       case 0:
         return 0;
       case 1:
@@ -76,9 +77,9 @@ export default function ArticleList() {
   };
 
   return (
-    <section className="mt-32 flex w-screen flex-col gap-y-20 px-20 py-28">
+    <section className="mt-32 flex w-screen flex-col gap-y-10 px-4 py-28 lg:px-20">
       <Featured />
-      <div className="grid grid-cols-3 gap-16">
+      <div className="grid grid-cols-1 gap-16 sm:grid-cols-2 xl:grid-cols-3">
         {articles &&
           articles.map((article, index) => (
             <div
@@ -86,7 +87,7 @@ export default function ArticleList() {
               className="flex w-full flex-col gap-y-3"
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay={`${windowWidth < 768 ? 0 : generateDelay(index)}`}
+              data-aos-delay={`${generateDelay(index)}`}
             >
               <div className="relative flex w-full justify-center pb-5">
                 <div className="group h-80 w-full overflow-hidden rounded-3xl">
